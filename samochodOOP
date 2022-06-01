@@ -1,0 +1,27 @@
+class Car:
+    amount_of_wheels = 4
+
+    def ___init__(self, color, mileage, brand):
+        self.color = color
+        self.mileage = mileage
+        self.brand = brand
+
+    def getBrand(self):
+        print(f"This is {self.brand}")
+
+    def getColor(self):
+        print(f"This car is color {self.color}")
+
+    def getMileage(self):
+        print(f"Car mileage is {self.mileage}")
+
+    def changeColor(self):
+        self.color = "green"
+
+    def increaseMileage(self):
+        self.mileage += 2
+
+
+audi = Car("Black", 50000, "audi")
+
+print(f"Brand: {audi.getBrand()}\n Color: {audi.getColor()}\n Mileage:{audi.getMileage()}")
